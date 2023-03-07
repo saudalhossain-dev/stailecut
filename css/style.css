@@ -1,0 +1,430 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+ /* Common CSS Part Start */
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1D1D1D;
+}
+h6{
+    color: #D8D8D8;
+}
+hr{
+    width: 60px;
+    height: 4px;
+    background-color: #fb774b;
+}
+.featur-product-star{
+    padding: 10px 0;
+}
+.featur-product-star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1D1D1D;
+    color: aliceblue;
+    padding: 13px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: #3a3833;
+    color: coral;
+}
+/* Common CSS Part End */
+/* NavBar CSS Part Start */
+.navbar {
+    font-size: 16px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active{
+    color: coral;
+}
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #222222;
+}
+/* NavBar CSS Part End */
+/* Mobile NavBar CSS Part Start */
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: black;
+}
+#bar:hover,
+#bar.active{
+    color: #fff;
+}
+@media only screen and (max-width: 991px) {
+    .navbar-toggler:hover,
+    .navbar-toggler:focus {
+        background-color: #fb774b;
+    }
+    .navbar-toggler:hover #bar,
+    .navbar-toggler:focus #bar{
+        color: #fff;
+    }
+    #navbarSupportedContent>ul{
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent>ul>li:nth-child(n)>a{
+        padding: 10px 0;
+    }
+}
+/* Mobile NavBar CSS Part End */
+/* Home Page CSS Part Start */
+    /* Banner CSS Part Start */
+    #banner{
+        background-image: url(../images/back.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: top 60px center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #banner span{
+        color: coral;
+    }
+    #banner .banner-button:hover{
+        color: #fb774b;
+    }
+    /* Banner CSS Part End */
+    /* Brand Logo CSS Part Start */
+    /* Brand Logo CSS Part End */
+    /* Feature Category CSS Part Start */
+    #feature-category .feature-category-item{
+        position: relative;
+    }
+    #feature-category .feature-category-item img{
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #feature-category .feature-category-item .feature-category-item-details{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: 0.3s ease;
+        z-index: 999;
+        transition: 0.3s ease;
+    }
+    #feature-category .feature-category-item:hover .feature-category-item-details{
+        cursor: pointer;
+        background: rgba(245, 178, 178, 0.7);
+    }
+    #feature-category .feature-category-item .feature-category-item-details button{
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #2a2a2a;
+        background: none;
+        text-transform: uppercase;
+        border-bottom: 1px solid #2a2a2a;
+        padding: 2.5px;
+        transform: translateY(70px);
+        transition: 0.3s ease;
+    }
+    #feature-category .feature-category-item .feature-category-item-details button:hover{
+        color: #fff;
+        border-bottom: 1px solid #ffffff;
+    }
+    #feature-category .feature-category-item:nth-child(1) .feature-category-item-details{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: start;
+    }
+    #feature-category .feature-category-item:nth-child(2) .feature-category-item-details{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #feature-category .feature-category-item:nth-child(3) .feature-category-item-details{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: end;
+    }
+    /* Feature Category CSS Part End */
+    /* Feature Product CSS Part Start */
+    .feature-product-item{
+        cursor: pointer;
+        margin-bottom: 2rem;
+        transition: all linear 0.4s;
+    }
+    .feature-product-item img{
+        transition: all linear 0.4s;
+    }
+    .feature-product-item:hover img{
+        opacity: 0.7;
+    }
+    .feature-product-item .buy-button{
+        background: #fb774b;
+        border: 1px solid #fb774b;
+        transform: translateY(20px);
+        opacity: 0;
+        transition: all linear 0.4s;
+    }
+    .feature-product-item:hover .buy-button{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    .feature-product-item .buy-button:hover{
+        color: #fb774b;
+        background: #ffffff;
+        border: 1px solid #999999;
+    }
+    /* Feature Product CSS Part End */
+    /* Banner Parallex CSS Part Start */
+    #banner-parallax{
+        background-image: url(../images/banner/2.jpg);
+        width: 100%;
+        height: 60vh;
+        background-size: cover;
+        background-position: top 70px center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    #banner-parallax h4{
+        color: #D8D8D8;
+    }
+    #banner-parallax h1{
+        color: #ffffff;
+    }
+    #banner-parallax button{
+        background-color: #fb774b;
+        transition: all linear 0.4s;
+    }
+    #banner-parallax button:hover{
+        color: #fb774b;
+        background-color: #ffffff;
+    }
+    /* Banner Parallex CSS Part End */
+    /* Cloths CSS Part Start */
+    /* Cloths CSS Part End */
+    /* Watches CSS Part Start */
+    /* Watches CSS Part End */
+    /* Shoes CSS Part Start */
+    /* Shoes CSS Part End */
+/* Home Page CSS Part End */
+/* Blog Page CSS Part Start */
+    #blog-container .post .post-image{
+        overflow: hidden;
+        cursor: pointer;
+    }
+    #blog-container .post img{
+        transition: all linear 0.4s;
+    }
+    #blog-container .post:hover img{
+        transform: scale(1.3) rotate(-10deg);
+        opacity: 0.8;
+    }
+    #blog-container .post h3{
+        transition: all linear 0.4s;
+        cursor: pointer;
+    }
+    #blog-container .post:hover h3{
+        color: #fd8c66;
+    }
+/* Blog Page CSS Part End */
+/* Cart Page CSS Part Start */
+#cart-container{
+    overflow-x: auto;
+}
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+#cart-container table thead{
+    font-weight: 700;
+}
+#cart-container table thead td{
+    background: #fd8c66;
+    color: #ffffff;
+    border: none;
+    padding: 6px 0;
+}
+#cart-container table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+#cart-container table td:nth-child(1){
+    width: 100px;
+}
+#cart-container table td:nth-child(2),
+#cart-container table td:nth-child(3){
+    width: 200px;
+}
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6){
+    width: 170px;
+}
+#cart-container table tbody img{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+#cart-container table tbody i{
+    color: #8d8d89;
+}
+#cart-bottom .coupon>div,
+#cart-bottom .total>div{
+    border: 1px solid #b6b3b3;
+}
+#cart-bottom .coupon h5,
+#cart-bottom .total h5{
+    background: #fd8c66;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+#cart-bottom .coupon p,
+#cart-bottom .coupon input{
+    padding: 0 12px;
+}
+#cart-bottom .coupon input{
+    height: 44px;
+    margin: 0 0 20px 12px;
+}
+#cart-bottom .coupon button{
+    margin: 0 0 20px 12px;
+}
+#cart-bottom .total div>div{
+    padding: 0 12px;
+}
+#cart-bottom .total h6{
+    color: #2a2a2a;
+}
+.second-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+#cart-bottom .total .cart-total-button{
+    display: flex;
+    justify-content: flex-end;
+}
+#cart-bottom .total .cart-total-button button{
+    margin: 0 0px 20px 0;
+}
+/* Cart Page CSS Part End */
+/* Footer CSS Part Start */
+footer{
+    background-color: #222222;
+}
+footer h5{
+    color: #D5D5D5;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+footer li{
+    padding-bottom: 4px;
+}
+footer li a{
+    font-size: 0.8rem;
+    color: #999999;
+    text-decoration: none;
+}
+footer li a:hover{
+    color: #d1d1d1;
+}
+footer p{
+    color: #999999;
+    font-size: 0.8rem;
+}
+footer .copyright{
+    border-top: 1px solid #666666;
+}
+footer .copyright a{
+    color: #000000;
+    width: 38px;
+    height: 38px;
+    background-color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: all linear 0.4s;
+    margin: 0 5px;
+}
+footer .copyright a:hover{
+    color: #ffffff;
+    background-color: #fb774b;
+}
+/* Footer CSS Part End */
